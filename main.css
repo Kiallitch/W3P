@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 600px;
+    flex-basis: 125px;
+}
+
+.calculator {
+    width: 100%;
+}
+
+.key-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.calc-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 50px;
+    height: 15vh;
+    font-size: 3rem;
+    font-weight: 100;
+    cursor: pointer;
+    min-width: 25%;
+    background-color: #64b255;
+    border-right: 1px solid #92c989;
+    border-bottom: 1px solid #92c989;
+    text-align: center;
+    transition: .1s ease-in;
+}
+
+.operator {
+    font-size: 2rem;
+}
+
+
+.operator.small {
+    font-size: 1.5rem;
+}
+
+.calc-btn:hover {
+    background-color: #92c989;
+}
+
+.calc-btn:first-child {
+    border-left: none;
+}
+
+.calc-btn:last-child {
+    border-right: none;
+}
+
+.calc-btn.teal {
+    background-color: #92c989;
+    color: #000;
+}
+
+.calc-btn.teal:hover {
+    background-color: #92c989;
+    color: #FFF;
+}
+
+.last-row .calc-btn {
+    border-bottom: none;
+}
+
+.last-row .eq {
+    background-color: #64b255;
+    color: #FFF;
+}
+
+.fill-button {
+    cursor: default;
+}
+
+.fill-button:hover {
+    background-color: #43d6a0;
+}
+
+.fa-info-circle {
+  color: #FFF;
+}
+
+.fa-info-circle:hover {
+  color: #FFF;
+}
+
+#display {
+    font-size: 5rem;
+    text-align: right;
+    background-color: #64b255;
+    color: #FFF;
+    height: 15vh;
+    width: 75%;
+    font-weight: normal;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: #83c178;
+    border-width: thin;
+
+  }
